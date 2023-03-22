@@ -27,7 +27,7 @@ const handleLoveClick = () => {
 const handleHateClick = () => {
     // Bump next Index
 
-    const nextIndex = activeIndex + 1 <= groups.length - 1 ? activeIndex + 1 : 0;
+    const nextIndex = activeIndex - 1 >= 0 ? activeIndex - 1 : groups.length - 1;
 
     const currentGroup = document.querySelector(`[data-index="${activeIndex}"]`);
     const nextGroup = document.querySelector(`[data-Index="${nextIndex}"]`);
