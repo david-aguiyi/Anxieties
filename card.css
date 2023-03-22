@@ -46,24 +46,38 @@ body {
 }
 .big-card:nth-child(8) {
 	transform: translate(10%, 3%) rotate(5deg);
-	/* background-color: rgba(0, 0, 255, 0.5); */
 }
 
+/* Hover-effect on big cards */
 .card-body:hover > .big-card:nth-child(2) {
 	transform: translate(-75%, 16%) rotate(-24deg);
 }
-
 
 .card-body:hover > .big-card:nth-child(4) {
 	transform: translate(-25%, 8%) rotate(-8deg);
 }
 
-
 .card-body:hover > .big-card:nth-child(6) {
 	transform: translate(25%, 8%) rotate(8deg);
 }
 
-
 .card-body:hover > .big-card:nth-child(8) {
 	transform: translate(75%, 16%) rotate(24deg);
+}
+
+/* Hover effect on small cards */
+.card-body:hover > .little-card:nth-child(1) {
+	transform: translate(240%, -185%) rotate(-15deg);
+}
+
+.card-body:hover > .little-card:nth-child(3) {
+    transform: translate(210%, 200%) rotate(15deg);
+}
+
+.card-body:hover > .little-card:nth-child(5) {
+    transform: translate(-230%, -190%) rotate(15deg);
+}
+
+.card-body:hover > .little-card:nth-child(7) {
+    transform: translate(-320%, 170%) rotate(-15deg);
 }
