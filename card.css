@@ -13,15 +13,20 @@ body {
 	background-color: rgba(225, 225, 225, 0.05);
 }
 
-.card-body,
+.card-group, .card-body,
 .card {
 	aspect-ratio: 5 / 7;
 }
 
-.card-body,
+.card-group, .card-body,
 .big-card {
 	width: 30vmin;
 }
+
+.card-body{
+    position: absolute;
+}
+
 .big-card {
 	width: 30vmin;
 	border-radius: 1vmin;
@@ -35,15 +40,23 @@ body {
 	transform: translate(-50%, -50%);
 }
 
+img{
+    width:100%;
+    height: 100%;
+}
+
 .big-card:nth-child(2) {
 	transform: translateX(-10%) rotate(-1deg);
 }
+
 .big-card:nth-child(4) {
 	transform: rotate(2deg);
 }
+
 .big-card:nth-child(6) {
 	transform: translateX(-6%) rotate(-3deg);
 }
+
 .big-card:nth-child(8) {
 	transform: translate(10%, 3%) rotate(5deg);
 }
