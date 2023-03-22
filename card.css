@@ -35,7 +35,25 @@ body {
 }
 
 .card-body[data-status="after"]{
-	transform: translateX(100%) scale(0);
+	transform: translateX(70%) scale(0);
+}
+
+.card-body[data-status="before"]{
+	transform: translateX(-70%) scale(0);
+}
+
+.card-body[data-status="becoming-active-from-before"]{
+	transform: translateX(-50%) scale(0);
+	transition: none;
+}
+
+.card-body[data-status="becoming-active-from-after"]{
+	transform: translateX(50%) scale(0);
+	transition: none;
+}
+
+.card-body[data-status="active"]{
+	transition-delay: 100ms;
 }
 
 .big-card {
@@ -102,48 +120,48 @@ body {
 	transform: translate(10%, 3%) rotate(5deg);
 }
 
-
+/* Cards Arrangements*/
 
 .card-body[data-index="1"] > .big-card:nth-child(8) {
 	background-repeat: no-repeat;
 	background-size: 70vmin;
 	background-image: url(images/stefan-rodriguez-2AovfzYV3rc-unsplash.jpg);
-	transform: translate(10%, 3%) rotate(5deg);
+	/* transform: translate(10%, 3%) rotate(5deg); */
 }
 
 .card-body[data-index="1"] > .big-card:nth-child(6) {
 	background-repeat: no-repeat;
 	background-size: 70vmin;
 	background-image: url(images/aaron-huber-8qYE6LGHW-c-unsplash\ \(1\).jpg);
-	transform: translate(10%, 3%) rotate(5deg);
+	/* transform: translate(10%, 3%) rotate(5deg); */
 }
 
 .card-body[data-index="2"] > .big-card:nth-child(8) {
 	background-repeat: no-repeat;
 	background-size: 70vmin;
 	background-image: url(images/aaron-huber-8qYE6LGHW-c-unsplash\ \(1\).jpg);
-	transform: translate(10%, 3%) rotate(5deg);
+	/* transform: translate(10%, 3%) rotate(5deg); */
 }
 
 .card-body[data-index="2"] > .big-card:nth-child(6) {
 	background-repeat: no-repeat;
 	background-size: 70vmin;
-	background-image: url(images/joey-banks-YApiWyp0lqo-unsplash.jpg);
-	transform: translate(10%, 3%) rotate(5deg);
+	background-image: url(images/stefan-rodriguez-2AovfzYV3rc-unsplash.jpg);
+	/* transform: translate(10%, 3%) rotate(5deg); */
 }
 
 .card-body[data-index="3"] > .big-card:nth-child(8) {
 	background-repeat: no-repeat;
 	background-size: 70vmin;
-	background-image: url(images/stefan-rodriguez-2AovfzYV3rc-unsplash.jpg);
-	transform: translate(10%, 3%) rotate(5deg);
+	background-image: url(images/joshua-koblin-eqW1MPinEV4-unsplash.jpg);
+	/* transform: translate(10%, 3%) rotate(5deg); */
 }
 
-.card-body[data-index="3"] > .big-card:nth-child(6){
+.card-body[data-index="3"] > .big-card:nth-child(2){
 	background-repeat: no-repeat;
 	background-size: 70vmin;
-	background-image: url(images/joey-banks-YApiWyp0lqo-unsplash.jpg);
-	transform: translate(10%, 3%) rotate(5deg);
+	background-image: url(images/aaron-huber-8qYE6LGHW-c-unsplash\ \(1\).jpg);
+	/* transform: translate(10%, 3%) rotate(5deg); */
 }
 /* Hover-effect on big cards */
 .card-body:hover > .big-card:nth-child(2) {
