@@ -1,0 +1,52 @@
+body {
+	margin: 0px;
+	background-color: black;
+	height: 100vh;
+	display: grid;
+	place-items: center;
+}
+
+.card {
+	aspect-ratio: 5 / 7;
+	position: absolute;
+	background-color: rgba(225, 225, 225, 0.05);
+}
+
+.card-body,
+.card {
+	aspect-ratio: 5 / 7;
+}
+
+.card-body,
+.big-card {
+	width: 30vmin;
+}
+.big-card {
+	width: 30vmin;
+	border-radius: 1vmin;
+}
+
+.little-card {
+	width: 10vmin;
+	border-radius: 2vmin;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.big-card:nth-child(1){
+    transform: translateX(-10%) rotate(-1deg);
+} 
+.big-card:nth-child(2){
+    transform:  rotate(2deg);
+} 
+.big-card:nth-child(3){
+    transform: translateX(-6%) rotate(-3deg);
+} 
+.big-card:nth-child(4){
+    /* background-color: rgba(0, 0, 255, 0.5); */
+    transform: translate(10%, 3%) rotate(5deg);
+} 
+
+
+
