@@ -5,16 +5,14 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
-		<link
-			rel="stylesheet"
-			href="path/to/font-awesome/css/font-awesome.min.css"
-		/>
+		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome" />
 		<link rel="stylesheet" href="card.css" />
 	</head>
 	<body>
+		<script src="card.js"></script>
 		<div class="card-swiper">
 			<div class="card-group">
-				<div class="card-body">
+				<div class="card-body" data-index="0" data-status="active">
 					<div class="little-card card"></div>
 					<div class="big-card card"></div>
 					<div class="little-card card"></div>
@@ -24,7 +22,7 @@
 					<div class="little-card card"></div>
 					<div class="big-card card"></div>
 				</div>
-				<div class="card-body">
+				<div class="card-body" data-index="1" data-status="unknown">
 					<div class="little-card card"></div>
 					<div class="big-card card"></div>
 					<div class="little-card card"></div>
@@ -34,7 +32,7 @@
 					<div class="little-card card"></div>
 					<div class="big-card card"></div>
 				</div>
-				<div class="card-body">
+				<div class="card-body" data-index="2" data-status="unknown">
 					<div class="little-card card"></div>
 					<div class="big-card card"></div>
 					<div class="little-card card"></div>
@@ -44,7 +42,7 @@
 					<div class="little-card card"></div>
 					<div class="big-card card"></div>
 				</div>
-				<div class="card-body">
+				<div class="card-body" data-index="3" data-status="unknown">
 					<div class="little-card card"></div>
 					<div class="big-card card"></div>
 					<div class="little-card card"></div>
@@ -57,10 +55,10 @@
 			</div>
 
 			<div class="card-swiper-buttons">
-				<button id="hate-button">
-					<i class="fa-solid fa-xmark"></i>
+				<button id="hate-button" onclick="handleHateClick()">
+					<i class="fa-solid fa-x">X</i>
 				</button>
-				<button id="love-button"><i class="fa-solid fa-heart"></i></button>
+				<button id="love-button" onclick="handleLoveClick()"><i class="fa-solid fa-heart">H</i></button>
 			</div>
 		</div>
 	</body>
