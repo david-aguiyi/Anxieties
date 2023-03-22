@@ -13,18 +13,20 @@ body {
 	background-color: rgba(225, 225, 225, 0.05);
 }
 
-.card-group, .card-body,
+.card-group,
+.card-body,
 .card {
 	aspect-ratio: 5 / 7;
 }
 
-.card-group, .card-body,
+.card-group,
+.card-body,
 .big-card {
 	width: 30vmin;
 }
 
-.card-body{
-    position: absolute;
+.card-body {
+	position: absolute;
 }
 
 .big-card {
@@ -40,24 +42,54 @@ body {
 	transform: translate(-50%, -50%);
 }
 
-img{
-    width:100%;
-    height: 100%;
+/*little cards*/
+.little-card:nth-child(1) {
+	background-size: 150% 100%;
+	background-repeat: no-repeat;
+	background-image: url(images/aaron-huber-8qYE6LGHW-c-unsplash\ \(1\).jpg);
+}
+.little-card:nth-child(3) {
+	background-size: 130%;
+	background-repeat: no-repeat;
+	background-image: url(images/dima-panyukov-DwxlhTvC16Q-unsplash\ \(1\).jpg);
+}
+.little-card:nth-child(5) {
+	background-size: 150% 100%;
+	background-repeat: no-repeat;
+	background-image: url(images/aaron-huber-8qYE6LGHW-c-unsplash\ \(1\).jpg);
+}
+.little-card:nth-child(7) {
+	background-size: 160% 100%;
+	background-repeat: no-repeat;
+	background-image: url(images/stefan-rodriguez-2AovfzYV3rc-unsplash.jpg);
 }
 
+/* Big cards */
 .big-card:nth-child(2) {
-	transform: translateX(-10%) rotate(-1deg);
+	background-size: 70vmin;
+	background-repeat: no-repeat;
+	background-image: url(images/joshua-koblin-eqW1MPinEV4-unsplash.jpg);
+	transform: translateX(-10%) rotate(-2deg);
 }
 
 .big-card:nth-child(4) {
+	background-repeat: no-repeat;
+	background-size: 40vmin;
+	background-image: url(images/dima-panyukov-DwxlhTvC16Q-unsplash\ \(1\).jpg);
 	transform: rotate(2deg);
 }
 
 .big-card:nth-child(6) {
+	background-repeat: no-repeat;
+	background-size: 70vmin;
+	background-image: url(images/stefan-rodriguez-2AovfzYV3rc-unsplash.jpg);
 	transform: translateX(-6%) rotate(-3deg);
 }
 
 .big-card:nth-child(8) {
+	background-repeat: no-repeat;
+	background-size: 70vmin;
+	background-image: url(images/joey-banks-YApiWyp0lqo-unsplash.jpg);
 	transform: translate(10%, 3%) rotate(5deg);
 }
 
@@ -84,13 +116,36 @@ img{
 }
 
 .card-body:hover > .little-card:nth-child(3) {
-    transform: translate(210%, 200%) rotate(15deg);
+	transform: translate(250%, 180%) rotate(15deg);
 }
 
 .card-body:hover > .little-card:nth-child(5) {
-    transform: translate(-230%, -190%) rotate(15deg);
+	transform: translate(-230%, -190%) rotate(15deg);
 }
 
 .card-body:hover > .little-card:nth-child(7) {
-    transform: translate(-320%, 170%) rotate(-15deg);
+	transform: translate(-320%, 170%) rotate(-15deg);
+}
+
+.card-swiper-buttons{
+	margin-top: 8vmin;
+	display: flex;
+	justify-content: space-around;
+	padding: 0vmin 4vmin;
+}
+
+.card-swiper-buttons > button{
+	font-size: 2.5vmin;
+	border: 0.4vmin solid rgb(200, 200, 200);
+	border-radius: 100%;
+	color: white;
+	background-color: transparent;
+	height: 7vmin;
+	width: 7vmin;
+	cursor: pointer;
+}
+
+#love-button{
+	color: rgb(33, 150, 243);
+	border-color: rgb(33, 150, 243);
 }
